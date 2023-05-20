@@ -1,0 +1,87 @@
+.content{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 846px;
+  }
+  
+  p{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 25px;
+    color: #4E5F60;
+    font-size: 20px;
+  }
+  
+  label{
+    font-family: 'Poppins', sans-serif;
+    color: #4E5F60;
+    font-size: 14px;
+  }
+  
+  form {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 0px auto;
+    box-shadow: 2px 2px 4px #ccc;
+    padding: 15px;
+  }
+  
+  input[type="text"]{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button:hover{
+      background-color: #0473EA;
+  }
+  
+  
+  .alert {
+    color: red;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #dropdownMenuButton{
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: start;
+    color: black;
+  }
+  
+  
+  .row {
+    display: flex;
+    width: 50%;
+    flex-wrap: nowrap;
+  }
+  
+  @media (max-width: 500px) {
+    .row {
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 107.5%;
+    }
+  
+    p{
+      margin: 0px auto;
+    }
+  }
+  
+  .dropdown-toggle{
+    content: "\f106"!important;
+  }
+  
