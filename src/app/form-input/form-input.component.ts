@@ -12,6 +12,7 @@ import { TaskService } from '../service/task.service';
 
 export class FormInputComponent implements OnInit {
   formInputForm: FormGroup;
+  is_success: Boolean = false;
   constructor(private formBuilder: FormBuilder, private taskservice: TaskService, private router: Router) {
     this.formInputForm = this.formBuilder.group({
       firstname: ["", Validators.compose([Validators.required])],
@@ -35,8 +36,8 @@ export class FormInputComponent implements OnInit {
       nums: "831",
       alphas: "AR",
     }
-    this.taskservice.add_data(payload).subscribe((res) => {
-      console.log(res);
+    this.taskservice.add_data(payload).subscribe((res:any) => {
+      this.is_success = res.body.data
     })
     
   }
